@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <video class="video__loop" autoplay loop muted>
+                <source src="./video-loop.mp4" />
+            </video>
+            <header class="header">
+                <label class="bugrger-menu" for="menu">
+                    <div class="bugrger-menu__bar"></div>
+                    <div class="bugrger-menu__bar"></div>
+                    <div class="bugrger-menu__bar"></div>
+                </label>
+                <input id="menu" class="bugrger-menu__checkbox" type="checkbox">
+                <nav class="navagation">
+                    <ul class="navagation__list">
+                        <li><a href="#bio"
+                                class="navagation__link navagation__bio">Bio</a></li>
+                        <li><a href="#skills"
+                                class="navagation__link navagation__skills">Skills</a></li>
+                        <li><a href="#media"
+                                class="navagation__link navagation__media">Media</a></li>
+                        <li><a href="#projects"
+                                class="navagation__link navagation__projects">Projects</a></li>
+                        <li><a href="#contact"
+                                class="navagation__link navagation__contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle">
+                    <h3 class="toggle__title">Switch Theme</h3>
+                    <input type="checkbox" name="toggle checkbox" id="toggle"
+                        class="toggle__checkbox">
+                    <label for="toggle" class="toggle__label"></label>
+                </div>
+            </header>
+
+            <section id="bio" class="bio section">
+                <div class="bio__data">
+                    <h1 class="bio__heading">Hi There I'M A Junior Software
+                        Engineer</h1>
+                    <p class="bio__objective">My name is <span
+                            class="bio__name">Ahmed Ghanem</span>, a Software
+                        Engineer
+                        <a class="bio__facebook"
+                            href="https://www.facebook.com/m.abusrea">Facebook</a>,
+                        <a class="bio__twitter"
+                            href="https://twitter.com/mohamed_abusrea">Twitter</a>,
+                        <a class="bio__linkedin"
+                            href="https://www.linkedin.com/in/mohamedabusrea/">LinkedIn</a>
+                        and
+                        <a class="bio__youtube"
+                            href="https://www.youtube.com/@MohamedAbusrea">Youtube</a>.
+                    </p>
+                    <a class="bio__links say-hi-link"
+                        href="#contact">Say Hi</a>
+                    <a class="bio__links find-out-link"
+                        href="./AhmedGhanem-cv.pdf" target="_blank" download>
+                        Download CV <span class="bio__arrow">↓</span>
+                    </a>
+                </div>
+                <div class="bio__pic-content">
+                    <img class="bio__pic" src="imags\personal-pic.png"
+                        alt="personal pic of Ahmed Ghanem" />
+                </div>
+            </section>
+
+            <section id="skills" class="skills section section--with--bg">
+                <h2 class="h2-heading">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__items">
+                        <h2 class="skills__title">HTML</h2>
+                        <span class="skills__years">1 year</span>
+                    </li>
+                    <li class="skills__items">
+                        <h2 class="skills__title">CSS</h2>
+                        <span class="skills__years">1 year</span>
+                    </li>
+                    <li class="skills__items">
+                        <h2 class="skills__title">Javascript</h2>
+                        <span class="skills__years">1 year</span>
+                    </li>
+                    <li class="skills__items">
+                        <h2 class="skills__title">Python</h2>
+                        <span class="skills__years">2 year</span>
+                    </li>
+                    <li class="skills__items">
+                        <h2 class="skills__title">Tailwind</h2>
+                        <span class="skills__years">1 year</span>
+                    </li>
+                    <li class="skills__items">
+                        <h2 class="skills__title">Github</h2>
+                        <span class="skills__years">1 year</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="media" class="media">
+                <video class="media__video" poster="./imags/thumbnail.jpg"
+                    controls>
+                    <source src="./video.mp4" />
+                </video>
+
+            </section>
+            <section id="projects" class="projects section">
+                <span class="h2-heading">MY FEATURED
+                    PROJECTS</span>
+                <div class="projects__main">
+                    <img class="projects__img" src="./imags/project-1.jpeg"
+                        alt="Qaraa newspaper logo">
+                    <div class="projects__data">
+                        <h3 class="h3-heading">Qaraa newspaper</h3>
+                        <p class="projects__description">delivering news with a
+                            user-friendly interface. It offers visually engaging
+                            layouts and easy navigation for an enhanced reading
+                            experience. Accessible across devices, it ensures
+                            seamless browsing for its readers.</p>
+                        <a href class="projects__links">Github Link </a>
+                    </div>
+                    <div class="projects__data">
+                        <h3 class="h3-heading">ICPC Pharos Community</h3>
+                        <p class="projects__description">ICPC training and
+                            registration, tailored for aspiring programmers.
+                            Access workshops, practice problems, and resources
+                            to sharpen coding skills and problem-solving
+                            abilities. Streamlined registration process ensures
+                            a seamless experience for students aiming to excel
+                            in global programming challenges.</p>
+                        <a href class="projects__links">Github Link </a>
+                    </div>
+                    <img class="projects__img" src="./imags/project-2.jpeg"
+                        alt="ICPC Pharos Community">
+                </div>
+            </section>
+            <section id="contact" class="contact section">
+                <div class="contact__description">
+                    <p>
+                        Feel free to reach out to me any time. I prefer to talk
+                        over email, especially since we may be a few time zones
+                        away.
+                    </p>
+                    <a href="mailto:ahmedghanemcs@gmail.com"
+                        class="contact__email">ahmedghanemcs@gmail.com</a>
+                    <div class="contact__socials">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100082401625744&locale=ar_AR"
+                            class="contact__social" target="_blank"><img
+                                src="./imags/brand/facebook.svg"
+                                alt="icon of facebook"></a>
+                        <a href class="contact__social" target="_blank"><img
+                                src="./imags/brand/LinkedIn.svg"
+                                alt="icon of LinkedIn"></a>
+                        <a href class="contact__social" target="_blank"><img
+                                src="./imags/brand/github.svg"
+                                alt="icon of github"></a>
+
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h2 class="h2-heading">LET'S WORK
+                        TOGETHER!
+                    </h2>
+                    <form action="results.html">
+                        <div class="contact__inputs">
+                            <input class="contact__input" type="text"
+                                placeholder="Full Name" name="Full Name"
+                                required>
+                            <input class="contact__input" type="tel"
+                                placeholder="Phone No." name="Phone No."
+                                pattern="[0-9]{11}">
+                        </div>
+                        <textarea class="contact__input contact__textarea"
+                            name="description" id="description" rows="1"
+                            placeholder="Your Message" required></textarea>
+                        <input class="contact__button" type="submit"
+                            value="Send message">
+                    </form>
+                </div>
+            </section>
+            <footer>&copy; 2024 by Ahmed Ghanem</footer>
+        </div>
+    </body>
+</html>
